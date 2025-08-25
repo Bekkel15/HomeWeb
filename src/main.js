@@ -13,7 +13,7 @@ import 'accordion-js/dist/accordion.min.css';
 import {
   toggleDarkMode,
   setupMobileMenuListeners,
-} from './js/header-logo.js';
+} from './js/header-hero.js';
 
 document
   .getElementById('toggle-background')

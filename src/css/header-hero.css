@@ -1,21 +1,106 @@
-.header-nav-menu-list {
-font-weight: 300;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.03em;
-color: var(--black);
+html {
+  scroll-behavior: smooth;
 }
 
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
 
+.is-hidden {
+  display: none;
+}
 
-.header-jefferson-logo {
+.header-container button {
+  all: unset;
+  cursor: pointer;
+}
+
+.container-mobile-menu button:hover {
+  background-color: transparent;
+}
+
+.container-mobile-menu .modal-close-btn {
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.mobile-menu-header .company-logo,
+.header-navigation .company-logo {
+  font-family: 'Impact', sans-serif;
   font-weight: 400;
-font-size: 32px;
-
-/* line-height: 32px; */ 
-line-height: 1;
-letter-spacing: 0.05em;
-text-transform: uppercase;
-color: var(--black);
-color: var(--accet-green);
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #292929;
+  display: none;
 }
+
+.logo-accent {
+  color: #00b068;
+}
+
+.hdr-nav-menu {
+  list-style: none;
+  display: none;
+  align-items: center;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.hdr-nav-menu-item .nav-menu-item-link {
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  color: #333;
+}
+
+.nav-menu-item-link:hover {
+  color: #00b068
+}
+
+.toggle-icon-black {
+  display: block;
+}
+
+.toggle-icon-white {
+  display: block;
+}
+
+.nav-btn {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+

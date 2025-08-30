@@ -1,11 +1,10 @@
 <header>
-  <div class="container header-container">
+  <div class="container hdr-container">
     <nav class="header-navigation">
-      <a class="company-logo" href="./index.html">
-        Lloyd<span class="logo-accent">Jefferson.</span>
-      </a>
-
-      <div class="nav-btn">
+      <a class="company-logo" href="./index.html"
+        >Lloyd<span class="logo-accent">Jefferson.</span></a
+      >
+      <div class="nav-right">
         <button type="button" id="toggle-background" class="toggle-background">
           <svg class="toggle-icon-white">
             <use
@@ -22,45 +21,43 @@
             ></use>
           </svg>
         </button>
-
         <ul class="hdr-nav-menu">
           <li class="hdr-nav-menu-item">
-            <a href="#about" class="nav-menu-item-link">About me</a>
+            <a href="#about-me" class="nav-menu-item-link">About me</a>
           </li>
           <li class="hdr-nav-menu-item">
-            <a href="#project" class="nav-menu-item-link">Projects</a>
+            <a href="#my-projects" class="nav-menu-item-link">Projects</a>
           </li>
           <li class="hdr-nav-menu-item">
-            <a href="#together" class="nav-menu-item-link">Contacts</a>
+            <a href="#work-together-footer" class="nav-menu-item-link"
+              >Contacts</a
+            >
           </li>
         </ul>
-
-        <a class="dark-order-btn" href="#together">Order the project</a>
+        <a class="dark-order-btn" href="#work-together-footer"
+          >Order the project</a
+        >
       </div>
     </nav>
-
-    <button type="button" id="mobile-burger-menu" class="mobile-burger-menu">
+    <button type="button" id="mobile-burger-menu" class="mobile-burger-manu">
       <svg class="mobile-burger-menu-icon">
-        <use href="/img/svg/icon.svg#burger-menu" width="22" height="16"></use>
+        <use href="/img/svg/icons.svg#burger-menu" width="22" height="16"></use>
       </svg>
     </button>
   </div>
 </header>
-
 <section class="hero" id="hero">
-  <div class="hero-container">
+  <div class="container hero-container">
+    <div class="background-image-mobile"></div>
     <div class="background-image-tablet"></div>
     <div class="background-image-desktop"></div>
-
     <div class="title-img-wraper">
       <h1 class="hero-title">
-        Hello, I am <br />
-        <span class="hero-title-accent">
-          Fullstack <br />
-          developer
-        </span>
+        Hello, I am <br /><span class="hero-title-accent"
+          >Fullstack<br />
+          developer</span
+        >
       </h1>
-
       <div class="hero-img-wraper">
         <picture class="hero-picture hero-picture-light" id="hero-picture">
           <source
@@ -72,13 +69,13 @@
           />
           <img
             id="hero-img"
-            src="/src/img/imghero-picture@2x.jpg"
-            alt="portrait-width-laptop"
+            src="/img/imghero-picture@2x.jpg"
+            alt="portrait-with-laptop"
             class="hero-image"
           />
         </picture>
-
         <picture class="hero-picture hero-picture-dark">
+          <!-- Desktop only -->
           <source
             srcset="
               /img/imgdark-bg-hero-desktop@1x.webp 1x,
@@ -87,6 +84,7 @@
             media="(min-width: 1280px)"
             type="image/webp"
           />
+          <!-- Tablet only (between 768px and 1279px) -->
           <source
             srcset="
               /img/imgdark-bg-hero-tablet@1x.webp 1x,
@@ -95,6 +93,7 @@
             media="(min-width: 768px) and (max-width: 1279.9px)"
             type="image/webp"
           />
+          <!-- Fallback (mobile or unsupported browser) -->
           <img
             src="/img/imgdark-bg-hero-mobile@1x.webp"
             srcset="/img/imgdark-bg-hero-mobile@2x.webp 2x"
@@ -104,11 +103,10 @@
         </picture>
       </div>
     </div>
-
     <div class="hero-dark-reverse-wraper">
-      <div class="refferal-wrapper">
+      <div class="refferral-wrapper">
         <div class="projects-refferal">
-          <a class="arrow-link" href="#together">
+          <a class="arrow-link" href="#work-together-footer">
             <svg class="arrow-icon" width="30" height="16">
               <use href="/img/svg/icons.svg#green-arrow"></use>
             </svg>
@@ -119,15 +117,13 @@
             <div class="spacer"></div>
           </a>
         </div>
-
         <p class="hero-text">
           I work with people all over the world to create
           <span class="accent-hero-text">impressive</span> and
-          <span class="accent-hero-text">functional websites</span>
-          that reflect each client's unique personality.
+          <span class="accent-hero-text">functional websites</span> that reflect
+          each client’s unique personality.
         </p>
       </div>
-
       <nav class="hero-menu">
         <ul class="social-menu">
           <li>
@@ -149,9 +145,9 @@
           <li>
             <a
               class="social-menu-item"
-              href="https://www.linkedin.com/school/goit-start-your-career-in-it"
+              href="https://www.linkedin.com/school/goit-start-your-career-in-it "
               target="_blank"
-              >Linkedin</a
+              >LinkedIn</a
             >
           </li>
           <li>
@@ -159,7 +155,7 @@
               class="social-menu-item"
               href="https://github.com/Bekkel15/HomeWeb"
               target="_blank"
-              >Github</a
+              >GitHub</a
             >
           </li>
         </ul>
@@ -167,32 +163,30 @@
     </div>
   </div>
 </section>
-
-<!-- Mobile menu -->
+<!-- #regin Mobile menu -->
 <div class="mobile-menu" id="mobile-menu">
   <div class="container container-mobile-menu">
     <div class="mobile-menu-header">
-      <a class="company-logo" href="./index.html">
-        Lloyd<span class="logo-accent">Jefferson.</span>
-      </a>
-      <button class="modal-closer-btn" type="button">
+      <a class="company-logo" href="/index.html"
+        >Lloyd<span class="logo-accent">Jefferson.</span></a
+      >
+      <button class="modal-close-btn" type="button">
         <svg class="modal-close-icon" width="32" height="32">
           <use href="/img/svg/icons.svg#icon-close"></use>
         </svg>
       </button>
     </div>
-
-    <div class="mobile-main-menu">
+    <div class="mobile-main-manu">
       <div class="mobile-menu-background"></div>
       <ul class="mobil-menu-list">
         <li class="list-item">
-          <a class="nav-link studio" href="#about">About me</a>
+          <a class="nav-link studio" href="#about-me">About me</a>
         </li>
         <li class="list-item">
-          <a class="nav-link" href="#project">Projects</a>
+          <a class="nav-link" href="#my-projects">Projects</a>
         </li>
         <li class="list-item">
-          <a class="nav-link" href="#together">Contacts</a>
+          <a class="nav-link" href="#work-together-footer">Contacts</a>
         </li>
       </ul>
     </div>

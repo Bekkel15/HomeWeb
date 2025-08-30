@@ -2,9 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/HomeWeb/favicon.svg" />
+    <link rel="icon" href="/HomeWeb/assets/favicon-DwtBU8jO.svg" type="image/svg+xml" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
@@ -15,8 +21,9 @@
     <script type="module" crossorigin src="/HomeWeb/index.js"></script>
     <link rel="modulepreload" crossorigin href="/HomeWeb/assets/vendor-CyW2dx5P.js">
     <link rel="stylesheet" crossorigin href="/HomeWeb/assets/vendor-s5exEIWE.css">
-    <link rel="stylesheet" crossorigin href="/HomeWeb/assets/index-DI3AudkE.css">
+    <link rel="stylesheet" crossorigin href="/HomeWeb/assets/index-BUlTPa7F.css">
   </head>
+
   <body>
     <header>
   <div class="container hdr-container">
@@ -206,6 +213,7 @@
 
 
     <main>
+      <!-- Loads the specified .html file -->
       <section class="container about-me" id="about-me">
   <h1 class="about-me-title">About <span class="about-me-span">me</span></h1>
   <div class="item-container">
@@ -876,7 +884,22 @@
   </div>
 </section>
 
-    <load src="./partials/modal-window.html">
+    <!-- MODAL -->
+<div class="backdrop hidden" id="modalBackdrop">
+  <div class="modal" id="modalWindow">
+    <button class="close-btn" id="closeModalBtn">
+      <svg class="modal-icon" width="24" height="24">
+        <use href="/HomeWeb/assets/icons-Cd6RWSuI.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h2 class="modal-title">THANK YOU FOR YOUR INTEREST IN COOPERATION!</h2>
+    <p class="modal-description">
+      The manager will contact you shortly to discuss further details and
+      opportunities for cooperation. Please stay in touch.
+    </p>
+  </div>
+</div>
+
 
   </body>
 </html>

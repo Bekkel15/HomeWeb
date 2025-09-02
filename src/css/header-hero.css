@@ -2,7 +2,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.header-container {
+.hdr-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,7 +14,7 @@ html {
   display: none;
 }
 
-.header-container button {
+.hdr-container button {
   all: unset;
   cursor: pointer;
 }
@@ -78,7 +78,10 @@ html {
 
 .nav-menu-item-link:hover {
   color: #00b068;
+  /* slight green hover like your accent color */
 }
+
+/* When dark mode is active on the button */
 
 .toggle-icon-black {
   display: block;
@@ -88,13 +91,13 @@ html {
   display: block;
 }
 
-.nav-btn {
+.nav-right {
   display: flex;
   align-items: center;
   gap: 24px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .hdr-nav-menu {
     display: none;
   }
@@ -122,7 +125,7 @@ html {
 }
 
 /* === Burger Menu === */
-.mobile-burger-menu {
+.mobile-burger-manu {
   background: none;
   border: none;
   cursor: pointer;
